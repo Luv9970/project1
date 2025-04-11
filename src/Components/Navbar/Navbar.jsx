@@ -1,0 +1,53 @@
+import React from 'react'
+import './Navbar.css'
+import { HiMiniHome } from "react-icons/hi2";
+import { FaCartShopping } from "react-icons/fa6";
+import { FaAngellist } from "react-icons/fa6";
+import { HiOutlineShoppingCart } from "react-icons/hi";
+
+
+
+
+
+const Navbar = () => {
+  return (
+    <div className='navbar'>
+      <div className='navbar-left'>
+        <div>
+          LOGO
+        </div>
+      </div>
+
+      <div className='navbar-right'>
+        <div className='navbar-item-all'>
+
+        <div className='navbar-item'>
+          Home
+          {/* <div className="navbar-icon">
+          <HiMiniHome />
+          </div> */}
+        </div>
+
+        <div className='navbar-item'>
+          Wishlist
+          {/* <div className="navbar-icon">
+          <FaAngellist/>
+          </div> */}
+        </div>
+
+        <div className='navbar-item'>
+          {/* Cart */}
+          <div className="navbar-icon">
+            <HiOutlineShoppingCart />
+          </div>
+        </div>
+        </div>
+       
+
+        <div className='navbar-logout'>Logout</div>
+      </div>
+    </div>
+  )
+}
+
+export default Navbar

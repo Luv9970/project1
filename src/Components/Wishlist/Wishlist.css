@@ -1,0 +1,125 @@
+/* WishlistPage.css */
+
+.wishlist-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #333;
+  }
+  
+  .breadcrumb {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .wishlist-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .wishlist-icon {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .wishlist-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .wishlist-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .wishlist-row.header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
+  
+  .wishlist-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .product-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 1 40%;
+  }
+  
+  .product-image {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .remove-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .price-info {
+    flex: 1 1 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  .sale-price {
+    color: #c4a400;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .stock-info {
+    flex: 1 1 30%;
+    text-align: right;
+  }
+  
+  .added-date {
+    color: #777;
+    font-size: 0.85rem;
+    margin: 0.25rem 0;
+  }
+  
+  .add-to-cart {
+    background-color: #489c91;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #34746a;
+  }
+  

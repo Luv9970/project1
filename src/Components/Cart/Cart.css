@@ -1,0 +1,158 @@
+/* ShoppingCart.css */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .shopping-cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 40px;
+  }
+  
+  .cart-items {
+    flex: 2;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .item-card {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    gap: 20px;
+  }
+  
+  .item-image {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .item-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .item-meta {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .item-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .current-price {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .item-actions {
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .summary-box {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+  }
+  
+  .summary-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .summary-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .promo-code {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .promo-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .promo-button {
+    padding: 8px 16px;
+    background: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .summary-details {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 14px;
+  }
+  
+  .summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px 0;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+  }
+  
+  .checkout-button {
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .help-text {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+  }
+  

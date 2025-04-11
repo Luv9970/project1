@@ -1,0 +1,38 @@
+.category-item{
+    height:15vw;
+    width: 17vw;
+    background-color:rgba(25, 87, 150, 0.145);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    overflow: hidden;
+    margin-top: 1vw;
+    cursor:pointer;
+    user-select: none;
+}
+
+.category-item-name{
+ /* background-color: sienna; */
+    height:100%;
+    width:55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-item-image{
+ /* background-color: seagreen; */
+ height:100%;
+ width:45%;
+ border-radius: 40px;
+ overflow: hidden;
+}
+
+.category-item-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+

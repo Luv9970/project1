@@ -1,0 +1,22 @@
+.moving{
+    /* font-weight: 600; */
+    font-size: 2.5vw;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:2vw;
+    
+}
+
+.moving-arrow{
+    background-color: black;
+    color:rgb(205, 240, 153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:1vw;
+    border-radius: 50%;
+    rotate: -45deg;
+}
