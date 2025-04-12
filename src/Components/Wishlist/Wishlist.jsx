@@ -1,7 +1,11 @@
 import React from "react";
 import "./Wishlist.css";
+import { IoIosArrowBack } from "react-icons/io";
+import { NavLink } from "react-router-dom";
+
 
 const WishlistPage = () => {
+
   const wishlistItems = [
     {
       name: "Beanie with Logo",
@@ -30,21 +34,28 @@ const WishlistPage = () => {
 
   return (
     <div className="wishlist-page">
-      <p className="breadcrumb">HOME / WISHLIST</p>
+      <NavLink to="/Home" className="back-link">  
+        <p className="breadcrumb">
+          <IoIosArrowBack />
+        </p>
+      </NavLink>
+
       <div className="wishlist-header">
         <div className="wishlist-icon">♡</div>
         <h1>My Wishlist</h1>
       </div>
+
       <div className="wishlist-table">
         <div className="wishlist-row header">
           <span>Product name</span>
           <span>Unit price</span>
           <span>Stock status</span>
         </div>
+
         {wishlistItems.map((item, index) => (
           <div className="wishlist-row" key={index}>
             <div className="product-info">
-              <button className="remove-btn">🗑</button>
+              <button className="remove-btn">Remove</button>
               <img src={item.image} alt={item.name} className="product-image" />
               <span>{item.name}</span>
             </div>

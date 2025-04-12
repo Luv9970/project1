@@ -5,6 +5,10 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import Categories from '../Categories/Categories';
 import Marquee from '../Marquee/Marquee';
 import Footer from '../Footer/Footer';
+import { FaBasketballBall } from "react-icons/fa";
+import { GrSemantics } from "react-icons/gr";
+
+
 
 
 const Home = () => {
@@ -17,8 +21,12 @@ const Home = () => {
             <div className="home-left">
                 <div className='home-left-container'>
                     <div className="home-left-item1">
-                        <div className="home-left-top"></div>
-                        <div className="home-left-top"></div>
+                        <div className="home-left-top">
+                             <FaBasketballBall />
+                        </div>
+                        <div className="home-left-top">
+                            <GrSemantics />
+                        </div>
                     </div>
                     <div className="home-left-item2">
                         <div className="home-left-middle">Men</div>
@@ -70,6 +78,7 @@ const Home = () => {
             </div>
         </div>
             <div className='searchbox'>
+                
                 <div className='searchbar'>
                     <input type="text" placeholder='🔍Search' className='search-input'/>
                     <button className='search-button'>Search</button>

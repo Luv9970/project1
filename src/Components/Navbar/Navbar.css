@@ -57,3 +57,14 @@
     justify-content: center;
     font-size: 20px;
 }
+
+.navlink{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-item:hover , .navbar-logout:hover{
+    background-color: #1a181841;
+    transition: 0.15s;
+    color:white
+}
