@@ -110,7 +110,7 @@ color:white;
 
 .footer-content{
     display:flex;
-    color:rgb(74, 74, 74);
+    color:rgb(114, 114, 114);
     flex-direction: column;
     justify-content: start;
     /* background-color: red; */
@@ -140,7 +140,7 @@ color:white;
 .d3{
     height:1px;
     width:80%;
-    background-color: rgb(74, 74, 74);
+    background-color:rgb(114, 114, 114);
 
 }
 
@@ -155,5 +155,5 @@ color:white;
     justify-content: space-between;
     align-items: center;
     margin-top:20px;
-    color:rgb(74, 74, 74);
+    color:rgb(114, 114, 114);
 }

@@ -2,43 +2,48 @@ import React from "react";
 import "./Wishlist.css";
 import { IoIosArrowBack } from "react-icons/io";
 import { NavLink } from "react-router-dom";
-
+import { HiOutlineShoppingCart } from "react-icons/hi";
 
 const WishlistPage = () => {
-
   const wishlistItems = [
     {
       name: "Beanie with Logo",
-      originalPrice: 20.0,
       price: 18.0,
       image: "beanie-logo.jpg",
       stock: "In Stock",
-      addedOn: "December 5, 2019",
     },
     {
       name: "Classy shirt",
       price: 16.0,
       image: "classy-shirt.jpg",
       stock: "In Stock",
-      addedOn: "December 6, 2019",
     },
     {
       name: "Beanie",
-      originalPrice: 20.0,
       price: 18.0,
       image: "beanie.jpg",
       stock: "In Stock",
-      addedOn: "December 6, 2019",
     },
   ];
 
   return (
     <div className="wishlist-page">
-      <NavLink to="/Home" className="back-link">  
-        <p className="breadcrumb">
-          <IoIosArrowBack />
-        </p>
-      </NavLink>
+      <div className="wishlist-navbar">
+        <NavLink to="/Home" className="back-link">
+          <p className="breadcrumb">
+            <IoIosArrowBack />
+          </p>
+        </NavLink>
+
+        <NavLink to="/Cart" className="navlink">
+          <div className="navbar-item">
+            {/* Cart */}
+            <div className="navbar-icon">
+              <HiOutlineShoppingCart />
+            </div>
+          </div>
+        </NavLink>
+      </div>
 
       <div className="wishlist-header">
         <div className="wishlist-icon">♡</div>
@@ -61,13 +66,14 @@ const WishlistPage = () => {
             </div>
             <div className="price-info">
               {item.originalPrice && (
-                <span className="original-price">${item.originalPrice.toFixed(2)}</span>
+                <span className="original-price">
+                  ${item.originalPrice.toFixed(2)}
+                </span>
               )}
               <span className="sale-price">${item.price.toFixed(2)}</span>
             </div>
             <div className="stock-info">
               <p>{item.stock}</p>
-              <p className="added-date">Added on: {item.addedOn}</p>
               <button className="add-to-cart">Add to cart</button>
             </div>
           </div>

@@ -7,9 +7,11 @@ import Info from './Components/Info/Info'
 import Wishlist from './Components/Wishlist/Wishlist'
 // import LocomotiveScroll from 'locomotive-scroll';
 
-const App = () => {
 
+const App = () => {
+  
   // const locomotiveScroll = new LocomotiveScroll();
+
 
   return (
     <div>

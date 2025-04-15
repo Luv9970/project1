@@ -1,16 +1,21 @@
 /* ShoppingCart.css */
 
-body {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
+.main-cart{
+  color: #333;
+  max-width:1000px;
+  /* background-color: #d67e7e; */
+  margin: 0 auto;
   }
   
+  .cart-header{
+    padding-top: 2vw ;
+    padding-left:3.5vw;
+    /* background-color: aqua; */
+  }
   .shopping-cart {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 40px;
     gap: 40px;
   }
@@ -62,20 +67,19 @@ body {
   }
   
   .original-price {
-    text-decoration: line-through;
-    color: #999;
-  }
-  
-  .current-price {
-    color: #000;
+    color: #000000;
     font-weight: bold;
   }
   
   .item-actions {
     color: #999;
     font-size: 12px;
-    cursor: pointer;
+    /* cursor: pointer; */
     margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
   }
   
   .summary-box {
@@ -155,4 +159,54 @@ body {
     font-size: 12px;
     color: #777;
   }
+
+  .modify-group{
+    display: flex;
+    align-items: center;
+    /* background-color: blueviolet; */
+  }
+
+  .action-button1{
+    background-color: red;
+    border: none;
+    font-size: 0.9rem;
+    padding:0.3vw 1.2vw;
+    margin: 0vw 1vw;
+    color:white;
+    border-radius: 15px;
+    cursor:pointer;
+  }
+
+  .action-button2{
+
+      background-color: rgb(37, 99, 233);
+      border: none;
+      font-size: 0.9rem;
+      padding:0.3vw 1.2vw;
+      margin: 0vw 1vw;
+      color:white;
+      border-radius: 15px;
+      cursor:pointer;
+    }
+
+.quantity-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4vw;
+}
   
+.quantity-input{
+  width:40px;
+  border: none;
+  text-align: center;
+}
+
+.quantity-button{
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
